@@ -2,17 +2,17 @@
   "name": "pv",
   "version": "0.0.1",
   "description": "a plain markdown previewer with MathJax",
-  "main": "./dist/index.js",
+  "main": "./docs/index.js",
   "repository": {
     "type": "git",
     "url": ""
   },
   "scripts": {
-    "start": "http-server ./dist -o",
+    "start": "http-server ./docs -o",
     "lint": "eslint './src/**/*.js'",
     "test": "npm run lint && npm run build",
-    "watch": "watchify ./src/index.js -o ./dist/index.js",
-    "build": "browserify ./src/index.js -o ./dist/index.js"
+    "watch": "watchify ./src/index.js -o ./docs/index.js",
+    "build": "browserify ./src/index.js -o ./docs/index.js"
   },
   "author": "nolze",
   "license": "GPL-3.0",
