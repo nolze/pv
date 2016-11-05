@@ -1,0 +1,33 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-size: 1.4rem;
+    overflow-x: hidden;
+}
+
+#main-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+#main-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 980px) {
+    #main-wrapper {
+        width: 98rem;
+    }
+}
