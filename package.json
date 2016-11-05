@@ -5,7 +5,7 @@
   "main": "./docs/index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git://github.com/nolze/pv"
   },
   "scripts": {
     "start": "http-server ./docs -o",
