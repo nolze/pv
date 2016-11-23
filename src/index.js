@@ -1,7 +1,5 @@
 'use strict'
 
-var basename = require('path').basename
-
 var md = require('markdown-it')()
 
 var mdurl = location.hash.substr(1)
