@@ -5,7 +5,7 @@ var md = require('markdown-it')()
 var mdurl = location.hash.substr(1)
 
 if (mdurl != "") {
-  fetch(mdurl).then(function(response) {
+  fetch(mdurl, { mode: "no-cors" }).then(function(response) {
     return response.text()
   }).then(function(text) {
     if (text == "") return
