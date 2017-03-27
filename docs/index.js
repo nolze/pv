@@ -7345,12 +7345,15 @@ var md = require('markdown-it')()
 var mdurl = location.hash.substr(1)
 
 if (mdurl != "") {
-  fetch(mdurl, { mode: "no-cors" }).then(function(response) {
+  console.log(mdurl)
+  fetch(mdurl).then(function (response) {
+    console.log(response)
     return response.text()
-  }).then(function(text) {
+  }).then(function (text) {
+    console.log(text)
     if (text == "") return
     var html = md.render(text)
-    // console.log(html)
+    console.log(html)
     var div = document.getElementById('main-wrapper')
     div.innerHTML = html
     document.title = (new URL(mdurl)).pathname.split('/').slice(-1)[0]
